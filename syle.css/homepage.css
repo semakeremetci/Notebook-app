@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e7dccb;
+    display: flex;
+}
+
+.navbar {
+    width: 8%;
+    height: 100%;
+    background-color:#182334;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    min-width: 4.5em;
+    gap: 2em;
+}
+.button {
+    padding: 2%;
+    width: 100%;
+    height: 7%;
+    border: none;
+    background-color: #e7dccb;
+    min-height: 4em;
+}
+#text-area {
+    width: 50%;
+    height: 25%;
+    min-width: 10em;
+}
+#ekle {
+    width: 5%;
+    height: 25%;
+    min-width: 3em;
+}
+
+.card {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    height: 100%;
+}
+.giris {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+}
+.space {
+    width: 80%;
+    height: 90%;
+    background-color: #f0ede9;
+}
