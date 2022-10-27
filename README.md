@@ -11,7 +11,11 @@ This is a notebook app. Written with HTML, CSS and JavaScript.
 ![Preview](./preview.gif)
 <br>
 <br>
+
 Incoming features:
 
-- LocalStorage improvement 🔄
 - User profile settings 🔜
+
+Completed features:
+
+- LocalStorage improvement ✅
