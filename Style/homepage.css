@@ -94,6 +94,8 @@
   width: 80%;
   height: 90%;
   background-color: #f0ede9;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .inputvalfield {
   display: flex;
