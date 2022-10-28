@@ -1,29 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Merriweather:ital@1&family=Roboto&family=Shalimar&display=swap"
+      rel="stylesheet"
+    />
     <title>Notebook</title>
-    <link rel="stylesheet" href="./Style/homepage.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./Style/homepage.css" />
+    <link rel="stylesheet" href="./Style/modal.css" />
+  </head>
+  <body>
+    <div class="modal-container">
+      <div class="backdrop"></div>
+      <div class="modal-wrapper">
+        <div class="modal">
+          <div class="header">
+            <h1>Settings</h1>
+            <div class="close-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="theme-wrapper">
+            <div class="theme-colors">
+              <div class="theme-color dark"></div>
+              <div class="theme-color very-dark"></div>
+              <div class="theme-color default"></div>
+            </div>
+            <div class="theme-titles">
+              <p>Karanlık</p>
+              <p>High contrast</p>
+              <p>Aydınlık</p>
+            </div>
+          </div>
+          <div class="font">
+            <input
+              class="font-input"
+              type="text"
+              placeholder="Font tipini seçin"
+            />
+            <div class="font-area">
+              <div class="font-card"><p class="font-names">Kanit</p></div>
+              <div class="font-card">
+                <p class="font-names">Merriweather</p>
+              </div>
+              <div class="font-card"><p class="font-names">Roboto</p></div>
+              <div class="font-card"><p class="font-names">Shalimar</p></div>
+            </div>
+          </div>
+          <button class="deleteuser">Kullanıcıyı sil</button>
+        </div>
+      </div>
+    </div>
     <div class="container">
-        <div class="navbar">
-            <input class="button name" type="submit" value="Sema">
-            <input class="button dltUser" type="submit" value="Kullanıcıyı Sil"> 
-            <input class="button" type="submit" value="Çıkış Yap" onclick="location.href='index.html';">
+      <div class="navbar">
+        <input class="button name" type="submit" value="Sema" />
+        <input
+          class="button"
+          type="submit"
+          value="Çıkış Yap"
+          onclick="location.href='index.html';"
+        />
+      </div>
+      <div class="section">
+        <div class="giris">
+          <input id="text-area" type="text" placeholder="Bir not giriniz." />
+          <input id="ekle" type="submit" value="ekle" />
         </div>
-        <div class="section">
-            <div class="giris">
-                <input id="text-area" type="text" placeholder="Bir not giriniz.">
-                <input id="ekle" type="submit" value="ekle">
-            </div>
-            <div class="card">
-                <div class="space"></div>
-            </div>
+        <div class="card">
+          <div class="space"></div>
         </div>
+      </div>
     </div>
     <script src="homepage.js"></script>
-</body>
+    <script src="modal.js"></script>
+  </body>
 </html>

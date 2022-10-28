@@ -1,7 +1,6 @@
 "use strict";
 
 const username = document.querySelector(".name");
-const deleteUser = document.querySelector(".dltUser");
 const textArea = document.querySelector("#text-area");
 const add = document.querySelector("#ekle");
 const spaceField = document.querySelector(".space");
@@ -20,12 +19,6 @@ function localStorageDeletion(pressedValue) {
   console.log(textAreaInfo);
   localStorage.setItem("todos", JSON.stringify(textAreaInfo));
 }
-
-// deleting localstorage values
-deleteUser.addEventListener("click", function () {
-  localStorage.removeItem("todos") & localStorage.removeItem("username");
-  location.href = "index.html";
-});
 
 function addTodos() {
   const wrapper = document.createElement("div");
