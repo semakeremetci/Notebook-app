@@ -9,8 +9,9 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color:#f0ede9;
+  background-color: #f0ede9;
   display: flex;
+  position: relative;
 }
 
 .navbar {
@@ -28,7 +29,7 @@
   width: 100%;
   height: 7%;
   border: none;
-  background-color:#f0ede9;
+  background-color: #f0ede9;
   min-height: 4em;
   cursor: pointer;
 }
@@ -44,10 +45,10 @@
   min-width: 10em;
   border-radius: 5px;
   border-style: groove f0ede9;
-  outline: 0.1px f0ede9 ;
+  outline: 0.1px f0ede9;
 }
 #text-area:focus {
-  outline: 0.1px f0ede9 ;
+  outline: 0.1px f0ede9;
   border-radius: 5px;
   border-style: groove f0ede9;
 }
@@ -108,7 +109,7 @@
   justify-content: space-between;
   margin: 2%;
   padding: 1%;
-  background-color:#e3d5ca;
+  background-color: #e3d5ca;
   color: #f0ede9;
   cursor: pointer;
 }
@@ -128,4 +129,14 @@
 .inputvalfield input:checked + p {
   text-decoration: line-through;
   font-weight: bold;
+}
+
+.dark-theme {
+  background-color: #182334 !important;
+  color: #e3d5ca !important;
+}
+
+.high-contrast {
+  background-color: black !important;
+  color: #182334 !important;
 }

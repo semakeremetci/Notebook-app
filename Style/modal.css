@@ -1,0 +1,167 @@
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-container {
+  display: none;
+}
+
+.backdrop {
+  position: absolute;
+  background-color: rgba(74, 74, 74, 0.329);
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+
+.modal-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  padding: 24px;
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  background-color: #f0ede9;
+  z-index: 999;
+  overflow-y: scroll;
+  transition: 0.2s ease-in;
+}
+
+.modal:hover {
+  transform: translateY(-10px);
+}
+
+.modal > .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal > .header > h1 {
+  font-size: 2rem;
+}
+
+.close-button {
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+.close-button > svg {
+  fill: #182334;
+  transition: 0.2s ease-in;
+}
+
+.close-button > svg:hover {
+  fill: red;
+}
+
+.theme-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+}
+
+.theme-colors {
+  display: flex;
+  justify-content: space-around;
+}
+
+.theme-titles {
+  font-weight: bold;
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.theme-color {
+  width: 64px;
+  height: 64px;
+  background-color: #182334;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.theme-color:hover {
+  opacity: 0.7;
+}
+
+.dark {
+  position: relative;
+  left: -5px;
+  background-image: linear-gradient(to bottom right, #e3d5ca, #182334);
+}
+
+.very-dark {
+  background-image: linear-gradient(to bottom right, #182334, #000000);
+}
+
+.default {
+  position: relative;
+  left: 5px;
+  background-image: linear-gradient(to bottom right, #182334, #e3d5ca);
+}
+
+.font {
+  margin-top: 34px;
+}
+
+.font > input {
+  padding-left: 7px;
+  width: 100%;
+  height: 32px;
+  background-color: transparent;
+  border: 1px solid #182334;
+  border-radius: 5px;
+}
+
+.font-area {
+  margin-top: 7px;
+  width: 100%;
+  height: 148px;
+  border: 1px solid #182334;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.font-card {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px 10px;
+  width: 97%;
+  height: 64px;
+  background-color: #e3d5ca;
+  transition: 0.2s ease-in;
+}
+
+.font-card:hover {
+  background-color: #cfc2b7;
+}
+
+.modal > button {
+  margin-top: 24px;
+  width: 100%;
+  height: 34px;
+  cursor: pointer;
+  font-weight: bold;
+  color: red;
+}
+
+.modal > button:focus {
+  border: 1px solid #182334;
+  border-radius: 2px;
+  background-color: red;
+  color: white;
+}
