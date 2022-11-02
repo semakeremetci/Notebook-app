@@ -107,6 +107,7 @@
 .inputvalfield {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 2%;
   padding: 1%;
   background-color: #e3d5ca;
