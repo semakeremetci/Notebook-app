@@ -3,13 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #182334;
 }
+
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: #f0ede9;
+  background-color: var(--main-color);
   display: flex;
   position: relative;
 }
@@ -17,7 +16,7 @@
 .navbar {
   width: 8%;
   height: 100%;
-  background-color: #182334;
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,9 +28,10 @@
   width: 100%;
   height: 7%;
   border: none;
-  background-color: #f0ede9;
+  background-color: var(--main-color);
   min-height: 4em;
   cursor: pointer;
+  color: var(--color);
 }
 .button[value] {
   text-overflow: ellipsis;
@@ -58,16 +58,16 @@
   height: 25%;
   min-width: 3em;
   border-radius: 15%;
-  border: 2px solid #182334;
+  border: 2px solid var(--color);
   font-weight: bolder;
   font-size: 1.7ch;
-  background-color: #182334;
-  color: white;
+  background-color: var(--color);
+  color: var(--main-color);
   cursor: pointer;
 }
 #ekle:hover {
-  background-color: #182334;
-  border: 2px solid #182334;
+  background-color: var(--color);
+  border: 2px solid var(--color);
   transition: 0.3s ease-in;
   opacity: 0.7;
 }
@@ -110,8 +110,8 @@
   align-items: center;
   margin: 2%;
   padding: 1%;
-  background-color: #e3d5ca;
-  color: #f0ede9;
+  background-color: var(--secondary-color);
+  color: var(--color);
   cursor: pointer;
 }
 .inputvalfield:hover {
@@ -120,8 +120,8 @@
 }
 
 .deletebtn {
-  background-color: #182334;
-  color: #f0ede9;
+  background-color: var(--color);
+  color: var(--main-color);
   border-radius: 15%;
   padding: 0.1em;
   cursor: pointer;
@@ -130,14 +130,4 @@
 .inputvalfield input:checked + p {
   text-decoration: line-through;
   font-weight: bold;
-}
-
-.dark-theme {
-  background-color: #182334 !important;
-  color: #e3d5ca !important;
-}
-
-.high-contrast {
-  background-color: black !important;
-  color: #182334 !important;
 }

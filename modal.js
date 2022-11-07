@@ -4,55 +4,74 @@ const modalContainer = document.querySelector(".modal-container");
 const backdrop = document.querySelector(".backdrop");
 const closeBtn = document.querySelector(".close-button");
 const deleteUser = document.querySelector(".deleteuser");
-const fontInput = document.querySelector(".font-input");
 const pFonts = document.querySelectorAll(".font-names");
 const themeColor = document.querySelectorAll(".theme-color");
 const bodyField = document.body;
+const fontCard = document.querySelectorAll(".font-card");
+const themeStyle = document.getElementById("ThemeStyle");
+// set theme
+
+let themeData =
+  localStorage.getItem("selectedTheme") ||
+  localStorage.setItem("selectedTheme", "");
+
+function themeStyleAttirbute(themeInfo) {
+  themeStyle.setAttribute("href", `./Style/theme/${themeInfo}.css`);
+}
+
+themeColor.forEach((themeCard) => {
+  themeCard.addEventListener("click", function changeTheme() {
+    const selectedColor = themeCard.classList[1];
+    localStorage.setItem("selectedTheme", selectedColor);
+    themeStyleAttirbute(selectedColor);
+  });
+});
+
+// font names created with Array
 const fontNames = ["Kanit", "Merriweather", "Roboto", "Shalimar"];
 // font card text changes
 pFonts.forEach((font, index) => {
   font.style.fontFamily = fontNames[index];
 });
-
-// function themeChange(selected, themeInfo) {
-//   if (themeInfo === "dark") {
-//     selected.classList.add("dark-theme");
-//   } else if (themeInfo === "very-dark") {
-//     selected.classList.add("high-contrast");
-//   } else {
-//     selected.classList.contains(themeInfo)
-//       ? selected.classList.remove("dark-theme")
-//       : selected.classList.remove("very-dark");
-//   }
-// }
-
-// themeColor.forEach((selected) => {
-//   console.log(selected.classList[1]);
-//   selected.addEventListener(
-//     "click",
-//     themeChange(bodyField, selected.classList[1])
-//   );
-// });
-
-function inputFilter(e) {
-  console.log(e);
+/* when font selected, update the body font family
+   save this in localstorage function */
+fontCard.forEach((card) => {
+  card.addEventListener("click", function () {
+    localStorage.setItem("selectedFont", JSON.stringify(card.innerText));
+    bodyField.style.fontFamily = card.innerText;
+  });
+});
+// font input search then return the search values function
+function inputHandler() {
+  const fontInputValues = document.querySelector(".font-input").value;
+  fontCard.forEach((card) => {
+    if (card.innerText.toLowerCase().includes(fontInputValues)) {
+      card.style.display = "flex";
+    } else {
+      card.style.display = "none";
+    }
+  });
 }
 
-fontInput.addEventListener("keypress", inputFilter);
-// deleting localstorage values
+// deleting localstorage values function
 deleteUser.addEventListener("click", function () {
-  localStorage.removeItem("todos") & localStorage.removeItem("username");
+  localStorage.removeItem("todos") &
+    localStorage.removeItem("username") &
+    localStorage.removeItem("selectedFont");
   location.href = "index.html";
 });
-
-const modalVisiblity = function () {
+// set modal visibility function
+const modalVisibility = function () {
   modalContainer.style.display = "block";
 };
+// set Modal display to hidden function
 const modalHidden = function () {
   modalContainer.style.display = "none";
 };
 
-userInfo.addEventListener("click", modalVisiblity);
+userInfo.addEventListener("click", modalVisibility);
 
 closeBtn.addEventListener("click", modalHidden);
 backdrop.addEventListener("click", modalHidden);
+
+themeStyleAttirbute(themeData);
