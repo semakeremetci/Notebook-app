@@ -44,13 +44,13 @@
   height: 25%;
   min-width: 10em;
   border-radius: 5px;
-  border-style: groove f0ede9;
-  outline: 0.1px f0ede9;
+  border-style: groove var(--main-color);
+  outline: 0.1px var(--main-color);
 }
 #text-area:focus {
-  outline: 0.1px f0ede9;
+  outline: 0.1px var(--main-color);
   border-radius: 5px;
-  border-style: groove f0ede9;
+  border-style: groove var(--main-color);
 }
 #ekle {
   margin-left: 0.4em;
