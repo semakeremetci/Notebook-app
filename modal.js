@@ -6,7 +6,7 @@ const closeBtn = document.querySelector(".close-button");
 const deleteUser = document.querySelector(".deleteuser");
 const pFonts = document.querySelectorAll(".font-names");
 const themeColor = document.querySelectorAll(".theme-color");
-const bodyField = document.body;
+var bodyField = document.body;
 const fontCard = document.querySelectorAll(".font-card");
 const themeStyle = document.getElementById("ThemeStyle");
 // set theme
@@ -39,6 +39,10 @@ fontCard.forEach((card) => {
   card.addEventListener("click", function () {
     localStorage.setItem("selectedFont", JSON.stringify(card.innerText));
     bodyField.style.fontFamily = card.innerText;
+    window.add.style.fontFamily = card.innerText;
+    window.textArea.style.fontFamily = card.innerText;
+    window.username.style.fontFamily = card.innerText;
+    window.logout.style.fontFamily = card.innerText;
   });
 });
 // font input search then return the search values function

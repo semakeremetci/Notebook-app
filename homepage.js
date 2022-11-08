@@ -1,11 +1,11 @@
 "use strict";
-const username = document.querySelector(".name");
-const textArea = document.querySelector("#text-area");
-const add = document.querySelector("#ekle");
+var username = document.querySelector(".name");
+var textArea = document.querySelector("#text-area");
+var add = document.querySelector("#ekle");
 const spaceField = document.querySelector(".space");
 const localStorageValue = localStorage.getItem("username");
 const bodyFieldArea = document.body;
-const logout = document.querySelector(".logout");
+var logout = document.querySelector(".logout");
 username.value = localStorageValue;
 let data = localStorage.getItem("todos");
 let textAreaInfo = data ? JSON.parse(data) : [];
@@ -47,7 +47,6 @@ function addTodos() {
   p.textContent = textArea.value;
   deleteBtn.textContent = "Sil";
   deleteBtn.classList.add("deletebtn");
-  deleteBtn.style.fontFamily = fontInfo;
   wrapper.appendChild(checkBox);
   wrapper.appendChild(p);
   wrapper.appendChild(deleteBtn);
@@ -73,7 +72,6 @@ function addtodoslocalstorage(data) {
     p.textContent = value;
     deleteBtn.textContent = "Sil";
     deleteBtn.classList.add("deletebtn");
-    deleteBtn.style.fontFamily = fontInfo;
     wrapper.appendChild(checkBox);
     wrapper.appendChild(p);
     wrapper.appendChild(deleteBtn);
