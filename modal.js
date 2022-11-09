@@ -13,7 +13,7 @@ const themeStyle = document.getElementById("ThemeStyle");
 
 let themeData =
   localStorage.getItem("selectedTheme") ||
-  localStorage.setItem("selectedTheme", "");
+  localStorage.setItem("selectedTheme", "default");
 
 function themeStyleAttirbute(themeInfo) {
   themeStyle.setAttribute("href", `./Style/theme/${themeInfo}.css`);

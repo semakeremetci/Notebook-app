@@ -13,6 +13,14 @@ let textAreaInfo = data ? JSON.parse(data) : [];
 let fontType = localStorage.getItem("selectedFont");
 let fontInfo = fontType ? JSON.parse(fontType) : [];
 
+// 1 time page refresh after load page
+window.onload = function() {
+  if(!window.location.hash) {
+      window.location = window.location + '#loaded';
+      window.location.reload();
+  }
+}
+
 let themeColorType = localStorage.getItem("selectedTheme");
 let themeInfo = themeColorType ? themeColorType : "default";
 

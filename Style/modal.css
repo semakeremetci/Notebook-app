@@ -125,6 +125,7 @@
   background-color: transparent;
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
+  color: var(--color);
 }
 
 .font-area {
