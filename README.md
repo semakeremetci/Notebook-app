@@ -14,7 +14,7 @@ This is a notebook app. Written with HTML, CSS and JavaScript. Also we use Local
 
 ### Mobile View
 
-![mobie_view](/assets/Mobile_look.png)
+![mobie_view](/assets/Mobile_view.png)
 
 Completed features:
 
