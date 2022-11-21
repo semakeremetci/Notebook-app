@@ -8,7 +8,7 @@
 This is a notebook app. Written with HTML, CSS and JavaScript. Also we use LocalStorage.
 <br>
 <br>
-### Last version of Notebook App
+### Latest version of Notebook App
 https://user-images.githubusercontent.com/89296753/203045445-eca80bd3-7d2a-4259-9ea5-cc8e8f0ffecb.mp4
 
 <br>
@@ -22,6 +22,6 @@ Completed features:
 
 - User profile settings ✅
 
-- LocalStorage improvement ✅,
+- LocalStorage improvement ✅
 
 - Theme Selection ✅
