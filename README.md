@@ -5,17 +5,21 @@
 ![js](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 <br>
 <br>
-This is a notebook app. Written with HTML, CSS and JavaScript.
+This is a notebook app. Written with HTML, CSS and JavaScript. Also we use LocalStorage.
 <br>
 <br>
-![Preview](./preview.gif)
+![last_version](/assets/last_version.mp4)
 <br>
 <br>
 
-Incoming features:
+### Mobile View
 
-- User profile settings 🔜
+![mobie_view](/assets/Mobile_look.png)
 
 Completed features:
 
-- LocalStorage improvement ✅
+- User profile settings ✅
+
+- LocalStorage improvement ✅,
+
+- Theme Selection ✅
