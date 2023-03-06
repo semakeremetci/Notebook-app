@@ -14,9 +14,6 @@ https://user-images.githubusercontent.com/89296753/203045445-eca80bd3-7d2a-4259-
 <br>
 <br>
 
-### Mobile View
-
-![mobie_view](/assets/Mobile_view.png)
 
 Completed features:
 
