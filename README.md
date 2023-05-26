@@ -22,3 +22,5 @@ Completed features:
 - LocalStorage improvement ✅
 
 - Theme Selection ✅
+
+### Live Site of Project: https://semakeremetci.github.io/Notebook-app/
